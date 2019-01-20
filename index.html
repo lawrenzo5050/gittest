@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>CBN</title>
+  <link rel="stylesheet" href="">
+  <script src= "jquery.js"> </script>
+  <script>
+	
+	var employees = { accounting: {   // accounting is an array in employees.
+                    "1" : { "firstName" : "John",  // First element
+                      "lastName"  : "Doe",
+                      "id"       : 1 },
+
+                    "2": { "firstName" : "Mary",  // Second Element
+                      "lastName"  : "Smith",
+                      "id"       : 2 },
+ 
+                    "3": { "firstName" : "MaryRed",  // Third Element
+                      "lastName"  : "SmithSim",
+                      "id"       : 3 },
+					  
+					  "4": { "firstName" : "Kemi",  // Fourth Element
+                      "lastName"  : "Sanwolu",
+                      "id"       : 4 },
+					  
+					  "5": { "firstName" : "Zeenat",  // Fifth Element
+                      "lastName"  : "Ibrahim",
+                      "id"       : 5 }
+                  }, // End "accounting" array.                                  
+								law: {   // law is an array in employees.
+                    "6": { "firstName" : "James",  // First element
+                      "lastName"  : "Doe",
+                      "id"       : 6 },
+
+                    "7": { "firstName" : "Mem",  // Second Element
+                      "lastName"  : "Smithen",
+                      "id"       : 7 },
+					  
+					  "8": { "firstName" : "Jerry",  // Third Element
+                      "lastName"  : "Paterson",
+                      "id"       : 8 },
+
+					  "9": { "firstName" : "Tunde",  // Fourth Element
+                      "lastName"  : "Femi",
+                      "id"       : 9 },
+					  
+					  "10": { "firstName" : "Lax",  // Fifth Element
+                      "lastName"  : "Dricko",
+                      "id"       : 10 }
+                  }, // End "law" array.                                  
+								IT: {   // IT is an array in employees.
+                    "11": { "firstName" : "Peter",  // First element
+                      "lastName"  : "Will",
+                      "id"       : 11 },
+
+                    "12": { "firstName" : "Funmi",  // Second Element
+                      "lastName"  : "Bamidele",
+                      "id"       : 12 },
+					  
+					  "13": { "firstName" : "Hadiza",  // Third Element
+                      "lastName"  : "Tanko",
+                      "id"       : 13 },
+					  
+					  "14": { "firstName" : "Gwen",  // Fourth Element
+                      "lastName"  : "Onyeforo",
+                      "id"       : 14 },
+					  
+					  "15": { "firstName" : "Tish",  // Fifth Element
+                      "lastName"  : "Jan",
+                      "id"       : 15 }
+                  } // End "IT" array.                                  
+
+    } // End Employees
+		
+		//Accounting
+		var a = [];
+		$.each( employees.accounting, function( k, v ){
+			a.push(k);
+		} );
+		
+		var shuffle = [].concat(a);
+		var b = shuffle.sort(function(){
+			return 0.5 - Math.random();
+		});
+		console.log(a);
+		
+		for( i = 0; i < a.length; i++ ){
+			 b[i]  = employees.accounting[ b[i] ];
+		}
+		console.log(b);
+		//---End of accounting
+		
+		//Law
+		var a1 = [];
+		$.each( employees.law, function( k, v ){
+			a1.push(k);
+		} );
+		
+		var shuffle1 = [].concat(a1);
+		var b1 = shuffle1.sort(function(){
+			return 0.5 - Math.random();
+		});
+		console.log(a1);
+		
+		for( i = 0; i < a1.length; i++ ){
+			 b1[i]  = employees.law[ b1[i] ];
+		}
+		console.log(b1);
+		//---End of law
+		
+		//IT
+		var a2 = [];
+		$.each( employees.IT, function( k, v ){
+			a2.push(k);
+		} );
+		
+		var shuffle2 = [].concat(a2);
+		var b2 = shuffle2.sort(function(){
+			return 0.5 - Math.random();
+		});
+		console.log(a2);
+		
+		for( i = 0; i < a2.length; i++ ){
+			 b2[i]  = employees.IT[ b2[i] ];
+		}
+		console.log(b2);
+		//---End of IT
+		
+		
+ 
+		//console.log(shuffle);
+		//console.log(employees.accounting);
+		//console.log(employees.law);
+		//console.log(employees.IT);
+		
+		
+	/* var Professionals = [];
+	Professionals[0] = "Kemi: Computer Science, ";
+	Professionals[1] = "Gloria: Computer Science, ";
+	Professionals[2] = "Gozie: Computer Science, ";
+	Professionals[3] = "Kenny: Computer Science, ";
+	
+	var Professionals1 = [];
+	Professionals1[0] = "Tunde: Lawyer, ";
+	Professionals1[1] = "Oj: Lawyer, ";
+	Professionals1[2] = "Lawrence: Lawyer, ";
+	Professionals1[3] = "Dotun: Lawyer, ";
+	
+	var Professionals2 = [];
+	Professionals2[0] = "Bola: Accountant, ", "Zoology";
+	Professionals2[1] = "Timothy: Accountant, ";
+	Professionals2[2] = "James: Accountant, ";
+	Professionals2[3] = "Femi: Accountant, ";
+	
+	
+	function Distribute() {
+		var randomProfessionals = Math.floor(Math.random()*(accounting.length));
+		var randomProfessionals1 = Math.floor(Math.random()*(Professionals1.length));
+		var randomProfessionals2 = Math.floor(Math.random()*(Professionals2.length));
+		document.getElementById('prof').innerHTML = Professionals[randomProfessionals] + Professionals1[randomProfessionals1] + Professionals2[randomProfessionals2] ;
+		document.getElementById('proff').innerHTML = Professionals[randomProfessionals] + Professionals1[randomProfessionals1] + Professionals2[randomProfessionals2] ;
+	}
+	*/
+	
+
+  ;
+
+</script>
+</head>
+
+</head>
+<body>
+
+<h2>CBN</h2>
+<div>
+<table style="width:20px">
+  <tr>
+    <th>Name</th>
+    <th>Specialization</th> 
+    <th>Team</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+  <tr> 
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+<button onclick="">Click me</button>
+</div>
+<div id="prof"></div>
+<div id="place"></div>
+</body>
+
+</html>
